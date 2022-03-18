@@ -1,5 +1,5 @@
 {% set name = "xrd_simulator" %}
-{% set version = "0.3.10" %}
+{% set version = "0.3.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xrd_simulator-{{ version }}.tar.gz
-  sha256: e5dc2be2f1ffd91edd3094a87e3d8b3b969cf850353452807c81c682ec7eca6c
+  sha256: d5d22797bb0d1229046c2b90370293a87f301da56d3ceb39d22f94663ce07d1c
 
 build:
   number: 0
@@ -21,13 +21,14 @@ requirements:
     - python >=3.8,<3.9
   run:
     - matplotlib-base
-    - meshio ==5.0.2
-    - numba ==0.53.0
-    - numpy ==1.21.4
-    - pycifrw ==4.4.3
-    - pygalmesh ==0.10.6
+    - meshio
+    - numba
+    - numpy
+    - pycifrw
+    - pygalmesh
     - python >=3.8,<3.9
-    - scipy ==1.6.1
+    - scipy
+    - dill
 
 test:
   imports:
