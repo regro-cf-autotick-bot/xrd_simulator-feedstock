@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xrd_simulator-{{ version }}.tar.gz
-  sha256: 9666652218afa88cf8e845955449acedd1113af15f907c0bcc9d155aa467e38f
+  sha256: d5d22797bb0d1229046c2b90370293a87f301da56d3ceb39d22f94663ce07d1c
 
 build:
   number: 0
