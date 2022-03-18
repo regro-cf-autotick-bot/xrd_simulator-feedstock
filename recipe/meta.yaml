@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xrd_simulator-{{ version }}.tar.gz
-  sha256: e5dc2be2f1ffd91edd3094a87e3d8b3b969cf850353452807c81c682ec7eca6c
+  sha256: 9666652218afa88cf8e845955449acedd1113af15f907c0bcc9d155aa467e38f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
