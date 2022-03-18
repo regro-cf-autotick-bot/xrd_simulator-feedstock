@@ -1,5 +1,5 @@
 {% set name = "xrd_simulator" %}
-{% set version = "0.3.10" %}
+{% set version = "0.3.11" %}
 
 
 package:
