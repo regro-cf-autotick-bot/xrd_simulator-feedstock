@@ -1,5 +1,5 @@
 {% set name = "xrd_simulator" %}
-{% set version = "0.3.11" %}
+{% set version = "0.3.12" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xrd_simulator-{{ version }}.tar.gz
-  sha256: d5d22797bb0d1229046c2b90370293a87f301da56d3ceb39d22f94663ce07d1c
+  sha256: 6eb05b976fe49c95960b92dfa8d6fa653b82ed33b8f1ae30b2d0097e563c5459
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - python >=3.8,<3.9
     - scipy
     - dill
+    - xfab
 
 test:
   imports:
@@ -47,7 +48,9 @@ about:
   license: MIT
   license_file: LICENSE
   description: |
-    A package for simulating X-ray Diffraction from polycrystals.
+    The xrd_simulator package defines polycrystals as a mesh of tetrahedral single
+    crystals and simulates diffraction as collected by a 2D discretized detector
+    array while the sample is rocked around an arbitrary rotation axis.
 
 extra:
   recipe-maintainers:
