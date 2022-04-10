@@ -1,5 +1,5 @@
 {% set name = "xrd_simulator" %}
-{% set version = "0.3.13" %}
+{% set version = "0.3.14" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xrd_simulator-{{ version }}.tar.gz
-  sha256: ce70f1aa1365b99af4852e1d16f1ce1fd02cd43ff017c2b29068393e0703e20c
+  sha256: f1ac26338bd2cad64b7bd3108e2d3735d0b2f692e02908918a2d07cb59621a75
 
 build:
   number: 0
