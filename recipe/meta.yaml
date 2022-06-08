@@ -1,5 +1,5 @@
 {% set name = "xrd_simulator" %}
-{% set version = "0.3.14" %}
+{% set version = "0.3.15" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xrd_simulator-{{ version }}.tar.gz
-  sha256: f1ac26338bd2cad64b7bd3108e2d3735d0b2f692e02908918a2d07cb59621a75
+  sha256: 2e06709ce9c67f171adc2d62884b96029a061f79915b77503cd1a507b2992636
 
 build:
   number: 0
@@ -30,6 +30,8 @@ requirements:
     - scipy
     - dill
     - xfab
+    - xfab
+    - netcdf4
 
 test:
   imports:
