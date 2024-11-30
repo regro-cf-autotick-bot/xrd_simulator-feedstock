@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xrd_simulator-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xrd_simulator-{{ version }}.tar.gz
   sha256: 25a3ebdc215d74bc1cccb626b61e3ad5a7bcc2de8f6a0e796bd0a42d371a8a42
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8, <3.11
+    - python {{ python_min }}
   run:
     - matplotlib-base
     - meshio
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - pycifrw
     - pygalmesh
-    - python >=3.8, <3.11
+    - python >={{ python_min }},<3.11
     - scipy
     - dill
     - h5py
@@ -41,6 +41,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/fable-3dxrd/xrd_simulator
